@@ -5,10 +5,10 @@
 #include <C12832.h>
 char buffer[1024]; /* 1k bytes */
 
-DigitalOut LED[] = {
-    DigitalOut(LED_RED),
-    DigitalOut(LED_GREEN),
-    DigitalOut(LED_BLUE)
+DigitalOut LED[] = { /* initialise to 1==off */
+    DigitalOut(LED_RED,1),
+    DigitalOut(LED_GREEN,1),
+    DigitalOut(LED_BLUE,1)
 };
 char *name[] = {"red","green","blue"};
 
